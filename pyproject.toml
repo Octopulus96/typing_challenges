@@ -6,7 +6,7 @@ authors = ["Octopulus96 <octopulus96@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.10.6"
+python = "3.12.0"
 mypy = "^1.8.0"
 
 
@@ -15,15 +15,14 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
-python_version = "3.10.6"
+python_version = "3.12"
 warn_unused_configs = true
 warn_return_any = true
 disallow_untyped_calls = true
-ignore_missing_import = true
-disable_untyped_calls = true
+ignore_missing_imports = true
 check_untyped_defs = false
 warn_no_return = false
 show_column_numbers = true
 pretty = true
 color_output = true
-ignore_errors = true
+ignore_errors = false
